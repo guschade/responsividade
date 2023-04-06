@@ -1,25 +1,47 @@
 h1{
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ccc;
+    margin: 20px 0;
 }
+
 .container{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Bebas Neue', cursive;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+      width: 768px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .container{
+      width: 480px;
+    }
 }
  
-.card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+.card{
+    width: calc(33.33% - 20px);
+    max-width: 300px;
     text-align: center;
-    width: 300px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: px solid white;
 }
 
 .card img {
     max-width: 100%;
-    margin-bottom: 10px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .card h2 {
@@ -46,5 +68,12 @@ h1{
 
 .card a:last-child {
     margin-right: 0;
+}
+
+footer{
+    text-align: center;
+    text-decoration-line: none;
+    font-family: 'Bebas Neue', cursive;
+    background-color: gray;
 }
   
